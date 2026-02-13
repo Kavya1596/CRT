@@ -1,0 +1,121 @@
+'''
+1. Square star pattern
+n=4
+Output:-
+* * * *
+* * * *
+* * * *
+* * * *
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        print("*",end=" ")
+    print()
+
+2. Right angle triangle
+n=4
+Output:-
+*
+* *
+* * *
+* * * *
+n=int(input())
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+
+3. Inverted Trinagle
+n=4
+Output:-
+* * * *
+* * *
+* *
+*
+n=int(input())
+for i in range(n,0,-1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+    
+n=int(input())
+for i in range(1,n+1):
+    for j in range(n-1+1):
+        print("*",end=" ")
+    print()
+
+4. Number Tringle
+n=4
+Output:-
+1
+1 2
+1 2 3
+1 2 3 4
+n=int(input())
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+
+5. Repeated numbers
+n=4
+Output:-
+1
+2 2
+3 3 3
+4 4 4 4
+n=int(input())
+for i in range(1,n+1):
+    for j in range(i):
+        print(i,end=" ")
+    print()
+
+6. Alphabet Triangle
+n=4
+Output:-
+A
+A B
+A B C
+A B C D
+n=int(input())
+for i in range(1,n+1):
+    ch=65
+    for j in range(i):
+        print(chr(ch+j),end=" ")
+    print()
+
+7. Flyod Triangle
+n=4
+Output:-
+1
+2 3
+4 5 6
+7 8 9 10 
+n = int(input())
+num = 1
+for i in range(1, n + 1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+    print()
+
+8. Hollow Square
+n=4
+Output:-
+* * * *
+*     *
+*     *
+* * * *
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        if i==0 or i==n-1 or j==0 or j==n-1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+Assignment:-
+Hollow Square
+Stair case from hackerrank
+'''
